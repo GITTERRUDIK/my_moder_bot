@@ -4,7 +4,7 @@ from discord.ext import commands
 # Задайте префикс для команд
 intents = discord.Intents.default()
 intents.message_content = True
-bot = commands.Bot(command_prefix="!")
+bot = commands.Bot(command_prefix="!", intents=intents)
 
 # Событие: бот готов к работе
 @bot.event
